@@ -1,5 +1,5 @@
 Quynh Nguyen
-N13331849
+
 
 bash script To test run all code in linux from this folder. at this folder ROOTSYS is ../root/
 these script will run C++ code and copy output file to ../root/macros/
