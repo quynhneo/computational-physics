@@ -1,0 +1,16 @@
+data=read.table("p2.dat");
+x=data[2]
+n=nrow(x) #number of row
+cut = n/2
+cat(n,"\n")
+cat(cut, "\n")
+y = vector(length = (n-cut))
+for (i in 1:(n-cut))
+{
+y[[i]]<-x[cut+i,1]
+ }
+mean=mean(y)
+rms=sqrt(sum((y-mean)^2)/(n-cut))
+cat("rms: ",rms,"\n")
+cat("mean: ",mean,"\n")
+acf(y, lag.max=(n-cut-1))
